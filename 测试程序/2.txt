@@ -1,0 +1,46 @@
+const int a = 2, b = 4;
+const CHAR _ch1 = 'a', _ch2 = 'z';
+int c,d;
+char ch3[5];
+
+void Iftest(int m){
+	if(m != 1){
+		printf("not equal 1\n");
+	}
+	if(m == a){
+		printf("equal a\n");
+		return;
+	}
+	if(m >= b){
+		printf(">= b\n");
+		return;
+	}
+	if(m < 1){
+		printf("less than 1\n");
+	}
+	if(m > a){
+		if(m < b){
+			printf("equal 3\n");
+		}
+	}
+}
+
+void main(){
+	printf("please input 1~4: ");
+	scanf(d);
+	iftest(d);
+
+	c = 0;
+	do{
+		ch3[c] = 'a' + c;
+		c = c + 1;
+	}while(c < 5);
+
+	c = 0;
+	do{
+		printf(ch3[c]);
+		printf("\n");
+		c = c + 1;
+	}while(c < 5);
+
+}

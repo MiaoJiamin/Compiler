@@ -1,0 +1,127 @@
+const int num1 = 3,num2 = 9,MAX = 100;
+const char ch_1 = 'z', ch_2 = 'x';
+int num3,array1[10];     
+char ch_3,ch_4;
+
+void testDefine(){
+    const int int0=0,int1=1;
+    const int int_0=0,int_1=-1;
+    const int _int0=0,_int1=+1;
+    const char char0='0',char1='1';
+    int var0,var1;
+    int arr[10];
+    char varch0,varch1;
+    char arrch[10];
+    printf("testDefine passed!\n");
+}
+
+int func1(int n){
+    if(n > 1){
+        return(n * func1(n - 1));
+    }
+    return (1);
+}
+
+int fibo(int n){
+    if(n <= 0)   return(0);
+    if(n == 1)   return(1);
+    if(n == 2)   return(1);
+    return(fibo(n - 1) + fibo(n - 2));
+}
+
+void nextline(){
+    printf("\n");
+}
+
+void main(){
+    int i,n,m;
+    char ch_test,ch1,ch2;
+    i = 0;
+
+    testDefine();
+    do{ 
+        array1[i] = 10 + i;
+        i = i + 1;
+    }while(i < 10)  
+    
+
+    printf("Please input a num: ");
+    scanf(n);
+    if(n > num2){
+        printf(n);
+        printf(" is greater than ",num2);
+        nextline();
+    }
+    if(n < num1){
+        printf(n);
+        printf(" is less than ", num1);
+        nextline();
+    }
+    if(n >= num1){
+        if(n <= num2){
+            printf("The result of jiecheng is: " , func1(n));
+            nextline();
+        }
+    }
+    printf("If test passed!\n");
+    
+    printf("Please input a positive int: ");
+    scanf(m);
+    printf("The result of fibo is: ", fibo(m));
+    nextline();
+
+
+    printf("input z or x: ");
+    scanf(ch_test);
+    nextline();
+    switch(ch_test){
+        case 'z':printf("hello\n");
+        case 'x':printf("world\n");
+    }
+    printf("Switch test passed!");
+    nextline();
+
+    ch1 = 'a';
+    ch2 = ch1 + 1;
+    printf(ch1);
+    nextline();
+    printf(ch2);
+    nextline();
+    if(ch2 == 'b'){
+        printf("Print character test passed!\n");
+    }
+
+    printf("input 1~5: ");
+    scanf(n);
+    switch(n){
+        case 1: {
+            do{
+                printf(n);
+                nextline();
+                if(n == 2){
+                    printf("n = 2\n");
+                }
+                n = n + 1;
+            }while(n <= 5);
+        }
+        case 2: {
+            do{
+                printf(n * n);
+                nextline();
+                n = n + 1;
+            }while(n <= 5);
+        }
+        case 3: {
+            printf("333333333");
+            nextline();
+        }
+        case 4: {
+            n = ((n + 100) / 4 - 6) * 2;
+            printf(n);
+            nextline();
+        }
+        case 5: printf("end");
+
+    }
+}
+

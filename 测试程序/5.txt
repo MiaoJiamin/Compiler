@@ -1,0 +1,33 @@
+void testDefine(){
+    const int int0=0,int1=1;
+    const int int_0=0,int_1=-1;
+    const int _int0=0,_int1=+1;
+    const char char0='0',char1='1';
+    int var0,var1;
+    int arr[10];
+    char varch0,varch1;
+    char arrch[10];
+    printf("testDefine passed!\n");
+}
+
+void main(){
+	INT A ;
+	char b ;
+	A = 'z';
+	b = 'z';
+	testDefine();
+	printf('z');
+	printf("\n");
+	printf('z' - 1);
+	printf("\n");
+	b = b - 1;
+	printf(b);
+	printf("\n");
+	
+	printf(a);
+	printf("\n");
+	printf(a - 1);
+	printf("\n");
+	
+
+}

@@ -1,0 +1,53 @@
+int pow(int bottom, int exp){
+	int ans,i;
+	ans=1;
+	i = 1;
+	do {
+		ans=ans*bottom;
+		i = i + 1;
+	}while(i <=exp)
+	return;
+}
+
+void pow_test(){
+	int cnt;
+	int bottom;
+	char exp;
+	cnt = 0;
+	printf("---------pow_test---------\n");
+	do{
+		printf("input bottom: ");
+		scanf(bottom);
+		printf("input exponent: ");
+		scanf(exp);
+		printf("pow: ",pow(bottom,exp));
+		printf("\n");
+		cnt=cnt+1;
+	}while(cnt<3);
+	printf("---------pow_test---------\n");
+}
+
+int fibo(int n){
+    if(n <= 0)   return(0);
+    if(n == 1)   return(1);
+    if(n == 2)   return(1);
+    return(fibo(n - 1,n) + fibo(n - 2))
+}
+
+void fibo_test(){
+	int N;
+	cnt = 0;
+	printf("---------fibo_test---------\n");
+	do{
+		printf("input: ");
+		scanf(n);
+		printf("fibo: ", fibo(n));
+		printf("\n");
+		cnt = cnt + 1;
+	}while(cnt < 3);
+	printf("---------fibo_test---------\n");
+}
+void main(){
+	pow_test();
+	fibo_test();
+}

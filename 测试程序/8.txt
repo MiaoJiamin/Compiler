@@ -1,0 +1,25 @@
+void main(){
+	int n;
+	char ch;
+	printf("please input a int(1~3): ");
+	scanf(n);
+	printf("please input a char(a~d): ");
+	scanf(ch);
+	printf("\n");
+
+	switch(n){
+		case 1: printf("11111111\n");
+		case 2: printf("22222222\n");
+		case 3: printf("33333333\n");
+		
+	}
+	b = 10;
+	switch(ch){
+		case 'a': printf("aaaaaa");
+		case 'b': printf("bbbbbb");
+		case 'c': printf("cccccc");
+		case "ccc": printf("dddddd");
+		default:;
+	}
+
+}
